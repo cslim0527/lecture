@@ -12,8 +12,63 @@
     <main class="wrapper">
       <div class="header">
         <div class="container">
-          <div class="gnb">gnb</div>
-          <div class="search-form">search-form</div>
+          <div class="gnb">
+            <div class="left">
+              <button type="button" class="btn-hamburger"></button>
+              <button type="button" class="btn-npay"></button>
+            </div>
+            <div class="right">
+              <button type="button" class="btn-ntalk"></button>
+              <button type="button" class="btn-notify"></button>
+            </div>
+          </div>
+          <div class="search-area">
+            <picture class="seasonal-cover">
+              <img
+                usemap="#dog-day-map"
+                src="./images/search_cover.gif"
+                alt="국제 강아지의 날"
+              />
+              <map name="dog-day-map">
+                <area
+                  href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_clk.splogo&amp;fbm=0&amp;ie=utf8&amp;query=%EA%B0%95%EC%95%84%EC%A7%80%EC%9D%98+%EB%82%A0"
+                  target="_blank"
+                  coords="970,0, 1524,132"
+                />
+                <area
+                  href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_clk.splogo&amp;fbm=0&amp;ie=utf8&amp;query=%EA%B0%95%EC%95%84%EC%A7%80%EC%9D%98+%EB%82%A0"
+                  target="_blank"
+                  coords="204,72, 558,264"
+                />
+              </map>
+            </picture>
+            <form class="search-form">
+              <input
+                type="search"
+                placeholder="검색어를 입력해주세요."
+                class="search-input"
+                autofocus
+              />
+
+              <div class="search-box">
+                <button type="button" class="virtual-keypad"></button>
+                <button type="button" class="autocomplete-tool"></button>
+                <button type="button" class="btn-search">
+                  <svg
+                    id="btn-search"
+                    viewBox="0 0 50 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ico_btn_search type_color"
+                    style="fill: #d87f56"
+                  >
+                    <path
+                      d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
           <div class="quick-tools">quick-tools</div>
           <div class="timeboard">timeboard</div>
         </div>
