@@ -13,3 +13,27 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+html {
+  font-size: 10.5px;
+}
+
+body {
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+}
+
+.header .search-form {
+  padding: 70px 0 152px;
+}
