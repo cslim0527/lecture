@@ -131,6 +131,10 @@
   margin-left: -220px;
 }
 
+.seasonal-cover img {
+  max-width: initial;
+}
+
 .search-form {
   width: 706px;
   height: 58px;
