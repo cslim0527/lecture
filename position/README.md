@@ -1,6 +1,6 @@
-### Position
+## Position
 
-## MDN Guide (https://developer.mozilla.org/ko/docs/Web/CSS/position)
+### MDN Guide (https://developer.mozilla.org/ko/docs/Web/CSS/position)
 
 ### 설명
 
