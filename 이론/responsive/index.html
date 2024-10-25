@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .footer{
+            display: flex;
+        }
+        .logo{
+            flex: 1;
+            background-color: #eee;
+        }
+        .company{
+            flex: 1; /* flex-grow (1) , flex-shrink (1), flex-basis (auto) */
+            background-color: #aaa;
+        }
+        .info{
+            flex: 1;
+            background-color: #ccc;
+        }
+
+        /* 미디어쿼리 */
+        /* pc -> 1024 이상 */
+        /* tablet -> 1024 이하 */
+        /* mobile -> 767 이하 */
+        @media screen and (max-width: 990px) {
+            .footer{
+                flex-wrap: wrap;
+            }
+
+            .logo{
+                width: 100%;
+                flex: none;
+            }
+
+            .company,
+            .info {
+                width: 50%;
+                flex: none;
+            }
+        
+        }
+        @media screen and (max-width: 767px) {
+            .info , 
+            .company {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="logo">로고</div>
+        <div class="company">회사정보</div>
+        <div class="info">고객센터</div>
+    </footer>
+</body>
+</html>

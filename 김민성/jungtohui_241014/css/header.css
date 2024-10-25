@@ -1,0 +1,120 @@
+/* header */
+header {
+  color: #000;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  z-index: 10;
+  background-color: #fff;
+}
+
+header > .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .inner .h-left {
+  display: flex;
+  align-items: center;
+}
+
+header .inner .h-left .logo {
+  margin-right: 40px;
+}
+
+header .inner .h-left nav {
+}
+
+nav .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+nav .nav-menu .depth {
+  border-top: 1px solid #999;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  justify-content: space-between;
+  position: absolute;
+  top: 100%;
+  height: 316px;
+  background-color: #fff;
+  color: black;
+}
+
+nav .nav-menu .depth .inner {
+  display: flex;
+}
+
+nav .nav-menu > li {
+}
+
+nav .nav-menu > li > a {
+  display: block;
+  height: 94px;
+  line-height: 94px;
+}
+
+nav .nav-menu > li:hover .depth {
+  display: flex;
+}
+
+nav .depth p {
+  width: 136px;
+  background-color: #ccc;
+  margin-right: 40px;
+}
+nav .depth ul {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 30px;
+}
+
+nav .depth ul li {
+  width: 33.33%;
+}
+
+nav .depth a {
+  display: block;
+  width: 320px;
+}
+
+nav .depth a img {
+  width: 100%;
+}
+
+header .inner .h-right {
+}
+
+header .inner .h-right {
+  display: flex;
+  gap: 30px;
+}
+header .inner .h-right ul {
+  display: flex;
+  gap: 25px;
+}
+header .inner .h-right > ul > li > a {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+header .inner .h-right > a {
+  border-radius: 7px;
+  color: #fff;
+  background-color: #a5bcf6;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+header .inner .h-right ul {
+}
+
+.all-menu-wrap {
+  display: none;
+}

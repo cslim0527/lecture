@@ -1,0 +1,806 @@
+:root {
+  --swiper-theme-color: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #fff;
+  font-family: "CJONLYONENEW", sans-serif;
+  font-size: 1.6rem;
+}
+#wrap {
+  min-width: 340px;
+}
+
+/* 비쥬얼 섹 ------------------------------------------------*/
+.visual-sec {
+  background: url("../img/pc_background.jpg") no-repeat center / cover;
+  height: 1130px;
+  padding: 184px 96px 150px;
+  position: relative;
+}
+
+.visual-sec .tit-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.visual-sec .tit-box p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+.visual-sec .tit-box,
+.visual-sec .content-box {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.visual-slider {
+  padding-bottom: 50px;
+  /* 불릿위치조정 */
+}
+
+/* visual-sec swiper 영역---------------------- */
+.visual-sec .swiper-slide {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    height: 280px;
+    border-radius: 8px;
+    max-width: 280px;
+}
+.visual-sec .swiper-slide a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.visual-sec .swiper-slide .icon-group {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+.visual-sec .swiper-slide .icon1 {
+    opacity: 0;
+}
+.visual-sec .swiper-wrapper {
+  margin-top: 150px;
+  right: 0;
+}
+
+
+/* ----arrow box영역------- */
+.visual-sec .arrow-box {
+  position: absolute;  
+  right: 96px;
+  top: 460px;
+  width: 300px;
+  height: 62px;
+  background-color: #f32fd9;
+}
+.visual-sec .swiper-button-next,
+.visual-sec .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+}
+.visual-sec .swiper-button-next {
+    right: 0;
+    background: url(../svg/slide-next-48.svg) no-repeat center;
+}
+.visual-sec .swiper-button-prev {
+    left: 0;
+    background: url(../svg/slide-prev-48.svg) no-repeat center;
+}
+.visual-sec .swiper-button-next:hover {
+  background: url(../svg/slide-next-48-hover.c558272b.svg) no-repeat center;
+}
+.visual-sec .swiper-button-prev:hover {
+  background: url(../svg/slide-prev-48-hover.1e3da82d.svg) no-repeat center;
+}
+.visual-sec .swiper-button-next:after, 
+.visual-sec .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: tan;
+}
+
+/* 아래는 불릿 페이지네이션 */
+.visual-sec .swiper-pagination {
+    display: none;
+    bottom: 0;
+    text-align: left;
+}
+  
+.visual-sec .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 0.5;
+}
+.visual-sec .swiper-pagination-bullet-active {
+    width: 50px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+
+/* 섹션별 영역 > sec box------------------------------------- */
+main .sec-box {
+  margin-top: -150px;
+  border-top-left-radius: 150px;
+  background-color: rgba(26, 26, 26);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 150px;
+  overflow: hidden;
+}
+
+/* 섹션별 영역 > 첫번째 ------------------------------------------- */
+.about-sec {
+  height: 1100px;
+  padding: 80px 96px 120px;
+  min-height: 500px;
+}
+.about-sec .tit-box > h2 {
+    font-size: 2.4rem;
+}
+.about-sec .tit-box > p {
+    margin-top: 0.6em;
+    font-size: 4.8rem;
+    line-height: 1.3;
+}
+.about-sec .tit-box {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.about-sec .list-box {
+
+}
+.about-sec .content-box {
+
+}
+.about-sec .tit-box {
+    margin-bottom: 72px;
+}
+.about-sec .tit-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(to right, #f32fd9 7%, #8fa1ff 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-sec .tit-box a::after {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../svg/main-more.57e93224.svg) no-repeat center;
+}
+.about-sec .list-box {
+    max-width: 568px;
+}
+.about-sec .one,
+.about-sec .two,
+.about-sec .three,
+.about-sec .four {
+    display: flex;
+    height: 144px;
+    align-items: center;
+    text-align: left;
+    padding: 40px 0;
+    column-gap: 32px;
+    border-top: 3px solid #Fff;
+}
+.about-sec li p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #97999b;
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
+    white-space: pre-line;
+    text-decoration: underline;
+}
+.about-sec .content-box {
+    max-width: 550px;
+    margin-left: auto;
+    margin-top: -600px;
+    display: block
+}
+.about-sec .content-box p {
+    width: 450px;
+    margin-top: 93.48px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+.about-sec .seesee {
+    display: inline-block;
+    padding: 20px 40px;
+    height: 64px;
+    border: 1px solid #Fff;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 26px;
+    color: #Fff;
+    margin-top: 80px;
+    width: 247px;
+    height: 64px;
+    border-radius: 48px;
+    text-align: center;
+}
+
+
+/* 섹션별 영역 > 2번째------------------------------*/
+/* section {
+    padding: 0 48px;
+    min-height: 500px;
+    원래는 이렇게 줌
+    모든 sec에 padding 주는걸로 통일 대신  inner 안쓰고 
+} */
+.field-sec {
+  height: 850px;
+  padding: 0 48px;
+  min-height: 500px;
+  position: relative;
+  /* arrow의 앱솔의 기준이 래러티브가 되는거임 */
+}
+.field-sec .tit-box > h2 {
+  font-size: 2.4rem;
+}
+.field-sec .tit-box > p {
+  margin-top: 0.6em;
+  font-size: 4.8rem;
+  line-height: 1.3;
+}
+.field-sec .tit-box,
+.field-sec .content-box {
+  max-width: 1680px;
+  margin: 0 auto;
+  /* 아 이사이즈 안에서 노는거구나 */
+}
+.field-sec .tit-box {
+  margin-bottom: 72px;
+}
+.field-sec .tit-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(to right, #f32fd9 7%, #8fa1ff 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.field-sec .tit-box a::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url(../svg/main-more.57e93224.svg) no-repeat center;
+}
+.field-slider {
+  padding-bottom: 50px;
+  /* 불릿위치조정 */
+}
+.field-sec .img-box,
+.field-sec .img-box img {
+  transition: 0.3s;
+}
+.field-sec .img-box {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.field-sec .img-box:hover {
+  border-top-left-radius: 48px;
+  border-bottom-right-radius: 48px;
+}
+.field-sec .img-box:hover img {
+  transform: scale(1.2);
+}
+.field-sec h3 {
+  margin-top: 0.6em;
+  font-size: 2.6rem;
+}
+
+.field-sec .arrow-box {
+  display: none;
+  position: absolute;
+  right: 48px;
+  top: 130px;
+  /* 아 f12들어가서 직접 누르면서 확인하면 된다 */
+  width: 110px;
+  height: 62px;
+  /* 이렇게 크기부터 지정 */
+}
+.field-sec .swiper-button-next,
+.field-sec .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid #Fff;
+    border-radius: 50%;
+    이미지에 동그마리가 없을 시 */
+}
+.field-sec .swiper-button-next {
+  right: 0;
+  background: url(../svg/slide-next-48.b24b3b01.svg) no-repeat center;
+}
+.field-sec .swiper-button-prev {
+  left: 0;
+  background: url(../svg/slide-prev-48.936e3a6f.svg) no-repeat center;
+}
+.field-sec .swiper-button-next:hover {
+  background: url(../svg/slide-next-48-hover.c558272b.svg) no-repeat center;
+}
+.field-sec .swiper-button-prev:hover {
+  background: url(../svg/slide-prev-48-hover.1e3da82d.svg) no-repeat center;
+}
+.field-sec .swiper-button-next:after,
+.field-sec .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background-color: tan; 확인용도 */
+  /* 선생님 next prev에 after넣는 이유가 뭐에요? */
+}
+.field-sec .swiper-pagination {
+  display: none;
+  bottom: 0;
+  text-align: left;
+}
+
+.field-sec .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5s;
+}
+.field-sec .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 50px;
+  border-radius: 4px;
+  /* 밑에 페이지네이션 불릿만 반응할때 바뀌는거  */
+}
+
+@media (max-width: 1680px) {
+  .field-sec {
+    padding: 0;
+    /* 선생님 paddind:0 왜 주는거에요? */
+    /* 슬라이드 좌우로 움직일떄 100%다 보이게 하려고  */
+  }
+  .field-sec .tit-box {
+    padding: 0 48px;
+  }
+  .field-sec .content-box {
+    padding-left: 48px;
+    max-width: 100%;
+  }
+  .field-sec .arrow-box {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .field-sec .tit-box {
+    padding: 0 20px;
+  }
+  .field-sec .tit-box > h2 {
+    font-size: 2rem;
+  }
+  .field-sec .tit-box > p {
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+  .field-sec .content-box {
+    padding-left: 0px;
+     /* 슬라이드 좌우로 움직일떄 100%다 보이게 하려고  */
+  }
+  .field-slider .img-box {
+    padding-left: 20px;
+  }
+  .field-sec h3 {
+    padding-left: 20px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .field-sec .arrow-box {
+    display: none;
+  }
+  .field-sec .swiper-pagination {
+    display: block;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .field-sec .tit-box {
+    margin-bottom: 52px;
+  }
+  .field-sec .tit-box > h2 {
+    font-size: 1.6rem;
+  }
+  .field-sec .tit-box > p {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+/* 섹션별 영역 > 세번째섹션-----------------------------------------------  */
+/* 섹션별 영역 > 세번째섹션 > 타이틀박스  */
+.practice-sec {
+  height: 1000px;
+  padding: 0 48px;
+  min-height: 500px; 
+}
+.practice-sec .tit-box > h2 {
+    font-size: 2.4rem;
+}
+.practice-sec .tit-box > p {
+    margin-top: 0.6em;
+    font-size: 4.8rem;
+    line-height: 1.3;
+}
+.practice-sec .tit-box,
+.practice-sec .content-box {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.practice-sec .tit-box {
+    margin-bottom: 72px;
+}
+.practice-sec .tit-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(to right, #f32fd9 7%, #8fa1ff 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.practice-sec .tit-box a::after {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../svg/main-more.57e93224.svg) no-repeat center;
+}
+.practice-sec .img-box,
+.practice-sec .img-box img {
+  transition: 0.3s;
+}
+.practice-sec .img-box {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.practice-sec .img-box:hover {
+    border-top-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+.practice-sec .img-box:hover img {
+    transform: scale(1.2);
+}
+.practice-sec p {
+    margin-top: 40px;
+    font-size: 2.6rem;
+    line-height: 40px;
+}
+.practice-sec .see {
+    width: 247px;
+    min-width: 164px;
+    height: 64px;
+    border: 1px solid #Fff;
+    border-radius: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 26px;
+    color: #Fff;
+    margin-top: 40px;
+}
+.practice-sec .see:hover {
+    background-color: #fff;
+    color: black;
+}
+.practice-sec .swiper-pagination {
+    display: none;
+    bottom: 0px;
+    text-align: left;
+}
+.practice-sec .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 0.5s;
+}
+.practice-sec .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 50px;
+    border-radius: 4px;
+}
+.practice-slider {
+    padding-bottom: 80px;
+    /* 불릿위치조정 */
+}
+
+@media (max-width: 1680px) {
+    .practice-sec {
+        padding: 0;
+    }
+    .practice-sec .tit-box {
+        padding: 0 48px;
+    }
+    .practice-sec .content-box {
+        padding-left: 48px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .practice-sec .tit-box {
+        padding: 0 20px;
+    }
+    .practice-sec .tit-box > h2 {
+        font-size: 2.0rem;
+    }
+    .practice-sec .tit-box > p {
+        font-size: 3.2rem;
+        line-height: 1.5;
+    }
+    .practice-sec .content-box {
+        padding-left: 0px;
+    }
+    .practice-sec .img-box {
+        padding-left: 20px;
+    }
+    .practice-sec a p {
+        padding-left: 20px;
+        font-size: 2.0rem;
+        line-height: 26px;
+    }
+    .practice-sec .see {
+      padding-left: 20px;
+    }
+    .practice-sec .swiper-pagination {
+        display: block;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .practice-sec .tit-box {
+      margin-bottom: 52px;
+    }
+    .practice-sec .tit-box > h2 {
+      font-size: 1.6rem;
+    }
+    .practice-sec .tit-box > p {
+      font-size: 2.4rem;
+    }
+    .practice-sec a p {
+      line-height: 16px;
+    }
+    .practice-sec .see {
+      min-width: 93px;
+      height: 48px;
+      border: 1px solid #Fff;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      background-color: transparent;
+      line-height: 26px;
+      color: #Fff;
+      margin-top: 24px;
+  }
+    .practice-sec .swiper-pagination {
+      display: block;
+      padding-left: 20px;
+    }
+}
+
+
+/* 섹션별 영역 > 네번째------------------------------------------ */
+/* 섹션별 영역 > 네번째 > 섹션타이틀박스  */
+.story-sec {
+    height: 1000px;
+    padding: 0px 48px;
+    min-height: 500px;
+    /* position: relative; */
+    /* 일단 보류 */
+   
+}
+.story-sec .tit-box > h2 {
+    font-size: 2.4rem;
+}
+.story-sec .tit-box > p {
+    margin-top: 0.6em;
+    font-size: 4.8rem;
+    line-height: 1.3;
+}
+.story-sec .tit-box {
+max-width: 1680px;
+margin: 0 auto;
+}
+.story-sec .content-box {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-top: -220px;
+}
+.story-sec .tit-box {
+    margin-bottom: 72px;
+}
+.story-sec .tit-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(to right, #f32fd9 7%, #8fa1ff 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* --여기서부터 그리드 */
+.story-sec .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 6px;
+    max-width: 500px;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.story-sec .swiper-slide:first-child {
+    grid-column-start: 2;
+}
+.story-sec .swiper-slide {
+    max-width: 402px;
+    max-height: 402px;
+    height: auto;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.story-sec .swiper-slide:hover {
+    border-top-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+    color: black;
+    background-color: #Fff;
+}
+.story-sec a h2 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+}
+.story-sec a p {
+  font-size: 14px;
+}
+.story-sec .img-box {
+    margin-top: 20px;
+}
+.story-sec .txt-box-bot {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+.story-sec a strong {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+.story-sec .date {
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+}
+/* ---------그리드 끝/아래는 불릿------- */
+.story-sec .swiper-pagination {
+  display: none;
+  bottom: 0px;
+  text-align: left;
+}
+.story-sec .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5s;
+}
+.story-sec .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 50px;
+  border-radius: 4px;
+}
+.story-slider {
+  padding-bottom: 80px;
+  /* 불릿위치조정 */
+}
+
+
+/* ------여기서부터 미디어 커리-------- */
+@media (max-width: 1680px) {
+  .story-sec {
+      padding: 0;
+  }
+  .story-sec .tit-box {
+      padding: 0 48px;
+  }
+  .story-sec .content-box {
+      padding-left: 48px;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .story-sec .swiper-wrapper {
+    display: flex;
+    margin-top: 200px;
+    max-width: 1200px;
+  }
+  
+
+
+  .story-sec .tit-box {
+      padding: 0 20px;
+  }
+  .story-sec .tit-box > h2 {
+      font-size: 2.0rem;
+  }
+  .story-sec .tit-box > p {
+      font-size: 3.2rem;
+      line-height: 1.5;
+  }
+  .story-sec .content-box {
+      padding-left: 0px;
+  }
+  .story-sec .img-box {
+      padding-left: 20px;
+  }
+  .story-sec a p {
+      padding-left: 20px;
+      font-size: 2.0rem;
+      line-height: 26px;
+  }
+  .story-sec .see {
+    padding-left: 20px;
+  }
+  .story-sec .swiper-pagination {
+      display: block;
+      padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .story-sec .tit-box {
+    margin-bottom: 52px;
+  }
+  .story-sec .tit-box > h2 {
+    font-size: 1.6rem;
+  }
+  .story-sec .tit-box > p {
+    font-size: 2.4rem;
+  }
+  .story-sec a p {
+    line-height: 16px;
+  }
+  .story-sec .see {
+    font-size: 16px;
+  }
+}
+
+
+
+/* .story-sec .swiper-slide {
+  text-align: left;
+  width: 402px;
+  height: 402px;
+  box-sizing: border-box;
+} */
+
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 400px;
+    right: 100px;
+    background-color: transparent;
+}

@@ -1,0 +1,128 @@
+html {
+    font-size: 62.5%;
+  }
+  header {
+    padding: 0 24px;
+    border-bottom: 1px solid #f2f2f237;
+    background-color: transparent;
+    color:#eee;
+    position: fixed;
+    width: 100%;
+    font-weight: 500;
+    z-index: 10;
+  }
+  .h-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* .logo a {
+    display: block;
+    width: 136px;
+    height: 22px;
+    color: transparent;
+  } */
+  .h-in,
+  .logo,
+  .h-right,
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu {
+  gap: 3.7rem;
+  position: relative;
+  }
+  .h-right {
+    gap: 1.8rem;
+    position: relative;
+  }
+  .nav-menu {
+    position: relative;
+  }
+  .nav-menu > li > a {
+    display: block;
+    padding: 18px 0;
+  }
+  .nav-menu span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -16px;
+    width: 0;
+    height: 2px;
+    background-color:  #50a6e8;
+  }
+  .depth {
+    display: none;
+    position: absolute;
+    top: 55px; 
+  }
+  .depth li {
+    flex-shrink: 0;
+  }
+  /* .nav-menu > li:hover .depth {
+    display: flex;
+  } */
+  
+  .lang-wrap {
+    position: relative;
+  }
+  .global-popup {
+    display: none;
+  }
+  .global-popup {
+    position: absolute;
+  }
+  .global-popup {
+    /* display: flex;줄어들때 안 보이기 */
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    padding: 24px;
+    row-gap: 9px;
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+  }
+  
+  
+  .all-menu-wrap {
+    display: none;
+  }
+  
+  
+  @media (max-width: 1280px) {
+    nav {
+        display: none;
+    }
+    .logo {
+        padding: 30px 0;
+    }
+  }
+  @media (max-width: 1025px) {
+    header {
+        padding: 0 48px;
+    }
+  }
+  @media (max-width: 768px) {
+    header {
+        padding: 0 24px;
+    }
+  }
+  /* .all-menu-wrap.active {
+    display: block;
+  }
+  .all-menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+  } */
+  

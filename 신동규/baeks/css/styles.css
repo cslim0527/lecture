@@ -1,0 +1,51 @@
+body {
+  padding-top: 100px;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.5;
+}
+
+header .container {
+  width: 1150px;
+  background: skyblue;
+  margin: 0 auto;
+}
+
+.visual-section {
+  height: 472px;
+  background-color: #ddd;
+}
+
+.story-section {
+  height: 320px;
+  background-color: #bbb;
+}
+
+.fresh-section {
+  height: 600px;
+  background-color: #aaa;
+}
+
+.beverage-section {
+  height: 320px;
+  background-color: #666;
+}
+
+.info-section {
+  height: 320px;
+  background-color: #ccc;
+}
+
+footer {
+  height: 400px;
+  background-color: #bbb;
+}

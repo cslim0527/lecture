@@ -1,0 +1,72 @@
+ol,
+ul {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 84px;
+  background-color: blue;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+}
+nav {
+  width: 240px;
+  background-color: skyblue;
+  height: 1000px;
+  position: fixed;
+  left: 0px;
+  top: 84px;
+}
+body {
+  padding-top: 84px;
+  padding-left: 240px;
+  background-color: black;
+}
+section {
+  height: 3000px;
+}
+.logo {
+  width: 240px;
+  height: 84px;
+  background-color: brown;
+}
+.search-area {
+  height: 44px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.gnb {
+  width: 249px;
+  height: 32px;
+  background-color: chartreuse;
+}
+nav .category {
+  background-color: red;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 44px;
+  border-radius: 6px;
+  position: relative;
+}
+nav .submenu {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 200px;
+  background-color: red;
+  display: none;
+}
+
+nav .category:hover .submenu {
+  display: block;
+}
+
+nav .category:hover {
+  background-color: blue;
+}

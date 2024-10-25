@@ -1,3 +1,228 @@
-body {
-    background-color: blue;
+/* 리셋 시작 */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 리셋 끝 */
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.slide {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.slide .show {
+  opacity: 1;
+}
+
+.banner {
+  display: flex;
+}
+.banner > div {
+  flex: 1;
+  height: 200px;
+}
+.banner .tabs {
+  display: flex;
+}
+
+.banner .tabs > button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+.banner .tabs > button:nth-child(1) {
+  text-decoration: underline;
+}
+.banner .tabs > span {
+  font-size: 24px;
+  padding: 0 4px;
+}
+
+.banner .galary {
+  display: flex;
+  gap: 10px;
+}
+.banner .galary > div {
+  flex: 1;
+  background-color: aqua;
+}
+
+.banner .notice {
+  display: none;
+}
+
+.banner .notice.show {
+  display: block;
+}
+
+.banner .galary {
+  display: none;
+}
+
+.banner .galary.show {
+  display: flex;
+}
+
+.banner > div:nth-child(1) {
+  background-color: red;
+}
+.banner > div:nth-child(2) {
+  background-color: aqua;
+}
+.banner > div:nth-child(3) {
+  background-color: blue;
+}
+
+.banner > div > button:nth-child(1) {
+  text-decoration: solid;
+}
+/* .banner > div > button{
+  display: flex;
+}
+*/
+
+footer {
+  background-color: black;
+}
+.logo {
+  width: 200px;
+  height: 40px;
+  border: 1px solid;
+}
+.gnb > ul {
+  display: flex;
+}
+.submenu {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 100%;
+  transition: height 0.3s;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu {
+  background-color: darkblue;
+  position: relative;
+  color: white;
+  padding: 10px 30px;
+  width: 200px;
+  text-align: center;
+}
+.menu:hover {
+  background-color: lightblue;
+}
+
+.menu:hover .submenu {
+  height: 123px;
+}
+.submenu {
+  background-color: white;
+  color: black;
+}
+
+.submenu li {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.submenu li:hover {
+  background-color: lightblue;
+}
+
+/* 2번째 inline, inline-block 가운데로 정렬하기 위해서 -> text-align -> body */
+/* container가 필요한 이유: 전체를 움직이기 위해서.. */
+/* block -> 한줄을 모두 차지하는, 높이를 지정 할 수 있는.. */
+/* margin -> 바깥 여백 -> 가로 여백 auto -> 가운데 정렬 */
+
+.container {
+  border: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 
+  클래스가 다수 일때
+  class="logo gnb"
+  .logo.gnb {}
+
+  클래스 여러개에 스타일을 한번에 줄때
+  class="logo" class="gnb"
+  .logo,
+  .gnb {}
+*/
+
+/* 
+  flex item 들을 좌우로 흩어지게 하는방법
+  justify-content: space-between;
+*/
+
+/* contents 하위의 모든 a 요소에 color red */
+/* .contents a {
+  color: red;
+} */
+
+/* contents 직계 자식 위치에 있는 모든 a 요소에 color red */
+/* .contents > a {
+  color: red;
+} */
+
+/* 
+  ######################## 트랜지션 설명 ##########################
+
+  사용방법)
+  transition
+  A -> B 애니메이션을 주는 효과
+  
+  A case:
+  transition: css-property transition-duration (easing);
+
+  B case:
+  변화화는 스타일 (css)
+*/
+
+/* 
+  문제방법)
+  A Case: div
+ 조건: 에 마우스를 올리면 
+ B Case: 가로 사이즈가 600px 되게 만들어라. 
+*/
+
+/* 4주차 수업 시작 */
+
+/* 4주차 수업 끝 */
+
+/* 5주차 수업 시작 */
+
+/* 5주차 수업 끝 */
