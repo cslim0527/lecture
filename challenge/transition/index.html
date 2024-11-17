@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 40px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .box {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #ccc;
+        height: 90px;
+      }
+
+      .box a {
+        line-height: 90px;
+        display: block;
+        padding: 0 40px;
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .box::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        opacity: 0;
+        height: 4px;
+        background-color: blue;
+        border-radius: 4px;
+        transform: translateX(-50%);
+        transition: width 0.3s, opacity 0.3s;
+      }
+
+      .box:hover a {
+        color: blue;
+      }
+
+      .box:hover::after {
+        width: 100%;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <a href="#">주요사업</a>
+    </div>
+  </body>
+</html>
